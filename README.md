@@ -46,17 +46,3 @@ to put
 #
 later
 
-
-* Input a single CPE or multiple CPEs into the shell
-* Upload a text file containing a single CPE or multiple CPEs
-* Provide an IP address of a target machine. (This option does not require that the user has a number of CPEs to input prior to running the script)
-
-#### Minimum Viable Project Outcomes ####
-  * We will be able to take a user's single CPE input and query it against either the vulner's or vuln's databse and get all the CVE's associated with said CPE
-  
-####  Stretch Goals #####
-  * Our script will be able to take different forms of user input such as:
-    * Multiple CPE's separated by commas
-    * A file (text file or possibly an Excel file) of CPE's
-  * Our script will be able to automate finding the CPE's of a given target machine using NMap through Python
-  * Our script will be able to save the output (CVE's, description of the CVE, etc.) into an file (Excel file or text file)
