@@ -2,7 +2,7 @@
 ![Image](https://security.virginia.edu/sites/security.virginia.edu/files/e%20a%20hack%20detective..jpg)
 
 ## Overview  ##
-CVE Detective is a Python script that will help to automate finding all (if any) Common Vulnerablility and Exposures (CVEs) associated to any Common Platform Enumeration (CPEs) of a software, application, or Operating System.  You may input a single CPE, a list of CPEs separated by commas, or a text file of CPEs.  This program also has the functionality to use an NMap scan to find any CPEs of a target machine and output the CVEs associated with all CPEs found on the target machine.
+CVE Detective is a Python script that will help to automate finding all (if any) Common Vulnerablility and Exposures (CVEs) associated to any Common Platform Enumeration (CPEs) of a software, application, or Operating System.  From the Shell terminal, you may input a single CPE, a list of CPEs separated by commas, or a upload text file of CPEs.  This program also includes the functionality to perform an NMap scan to find any CPEs of a target machine and output the CVEs associated with all CPEs found on the target machine.
 
 ## Features
   * Utilizes vuln.sentnl.io's REST API to query the CPE input(s) and output CVE information
@@ -22,6 +22,8 @@ pip install -U python-nmap
 ```
 pip install pyfiglet
 ```
+
+## CVE-Detective Menu
 
 ## Required Format for Each Input Option
 No matter which option you decides to choose, you should follow a strict format as described below:
