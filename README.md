@@ -66,7 +66,28 @@ For each CPE, you can expect the output of CVE-Detective to include:
 
 ### Option 1: Inputting a Single CPE or Multiple CPEs on the Shell
 #
-stuff
+### Input Format
+CPEs may be entered as a single CPE or multiple CPEs. Multiple CPEs must be separated by a comma. 
+
+
+#### &ensp;Examples:
+```
+cpe:/a:apache:activemq_artemis:2.6.3
+```
+```
+cpe:/a:apache:activemq_artemis:2.6.3, cpe:2.3:a:apache:activemq:5.14.0:*:*:*:*:*:*:*, cpe:2.3:a:apache:accumulo:1.4.1:*:*:*:*:*:*:*
+```
+
+###Potential Errors
+#### &ensp;Trailing spaces or commas
+When a single CPE or the last CPE in a list of multiple CPEs is trailed by a space or comma, an error message will be displayed.
+![image](https://user-images.githubusercontent.com/100049886/155850972-59aef23b-a614-4914-a859-9da98fa0d755.png)
+
+#### &ensp;Invalid Characters
+```
+cpe:/a:apac$#^&he:activemq_artemis:2.6.3
+```
+
 ### Option 2: Uploading a Text File Containing CPEs into the Script
 #
 to put
@@ -76,3 +97,6 @@ This option will perform a nmap (-SV) scan on a target machine and return known 
 > Note
 > 1. Input of a valid IP address will be checked and, if invalid, user will be prompted to re-enter (CTRL+C to quit).
 > 2. Loading times may vary depending on the CPEs found, longer if more general CPEs are encountered.
+
+
+
