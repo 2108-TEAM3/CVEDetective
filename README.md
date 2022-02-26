@@ -24,6 +24,8 @@ pip install pyfiglet
 ```
 
 ## CVE-Detective Menu
+![image](https://user-images.githubusercontent.com/100049886/155829631-26dfccad-f9f0-4152-b358-1b56bb5bfaab.png)
+
 
 ## Required Format for Each Input Option
 No matter which option you decides to choose, you should follow a strict format as described below:
