@@ -24,10 +24,9 @@ pip install pyfiglet
 ```
 
 ## CVE-Detective Menu
-![image](https://user-images.githubusercontent.com/100049886/155829631-26dfccad-f9f0-4152-b358-1b56bb5bfaab.png)
+![image](https://user-images.githubusercontent.com/100049886/155829840-ff72683d-e913-4271-8680-38ca57949608.png)
 
-
-## Required Format for Each Input Option
+## Required Format and Expected Output
 No matter which option you decides to choose, you should follow a strict format as described below:
 
 ### CPE Format
@@ -39,6 +38,26 @@ cpe:/a:apache:activemq_artemis:2.6.3
 ```
 cpe:2.3:a:apache:accumulo:1.7.0:::::::
 ```
+
+### Results
+If there are no errors, you can expect an output like this:
+![image](https://user-images.githubusercontent.com/100049886/155830179-7d390c66-ddaa-4b9a-b027-8a89f9121a0a.png)
+
+For each CPE, you can expect the output of CVE-Detective to include:
+* CVE-IDs 
+* the CVSS Score of that CVE and its criticality rating
+* an link to the NIST's Vulernability Database for that CVE
+  * this link will provide more detail about that CVE and suggestions for remediation/mitigation 
+
+> Note
+> 1. If a single CPE has multiple CVEs, they will be displayed in order by CVSS Score and their criticality rating based on that score.
+>     1. The criticality rating is based on the most current CVSS version (CVSS v3.1) with a color associated to each criticality score. Each score can be broken down as follows:
+>     Base Score | Criticality Rating | Color
+>     ---------- | ------------------ | ------
+>     
+>   
+> 2. The order of CPEs will follow the same order that is input into the terminal or the text file to be uploaded.
+
 
 ### Option 1: Inputting a Single CPE or Multiple CPEs on the Shell
 #
