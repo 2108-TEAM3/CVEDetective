@@ -2,10 +2,10 @@
 ![Image](https://security.virginia.edu/sites/security.virginia.edu/files/e%20a%20hack%20detective..jpg)
 
 ## Overview  ##
-CVE Detective is a Python script that will help to automate finding all (if any) Common Vulnerablility and Exposures (CVEs) associated to any Common Platform Enumeration (CPEs) of a software, application, or Operating System.  From the Shell terminal, you may input a single CPE, a list of CPEs separated by commas, or a upload text file of CPEs.  This program also includes the functionality to perform an NMap scan to find any CPEs of a target machine and output the CVEs associated with all CPEs found on the target machine.
+CVE Detective is a Python script that will help to automate finding all (if any) Common Vulnerablility and Exposures (CVEs) associated to any Common Platform Enumeration (CPEs) of a software, application, or Operating System.  From the Shell terminal, you may input a single CPE, a list of CPEs (comma separated), or a upload a .txt file of CPEs.  This program also includes the functionality to perform an NMap scan to find any CPE of a target machine and output the associated CVEs found on the target machine.
 
 ## Features
-  * Utilizes vuln.sentnl.io's REST API to query the CPE input(s) and output CVE information
+  * Utilizes vuln.sentnl.io's API (HTTP REST) to query the CPE input(s) and output CVE information:
     * Output includes the CVE ID, CVSS score, and external link to the NIST's National Vulnerability Database (NVD) to provide a more thorough summary and suggestions for mitigation.
     * For each CPE, their CVE output on the shell is sorted based on their CVSS scores from highest criticality/priority to the lowest.
     * The script also saves the output into a CSV file in the same folder the script is run in.
@@ -72,5 +72,7 @@ stuff
 to put
 ### Option 3: Utilizing the Integrated NMap Scan 
 #
-later
-
+This option will perform a nmap (-SV) scan on a target machine and return known CVEs associated with the CPEs found, given a valid IP address.
+> Note
+> 1. Input of a valid IP address will be checked and, if invalid, user will be prompted to re-enter (CTRL+C to quit).
+> 2. Loading times may vary depending on the CPEs found, longer if more general CPEs are encountered.
