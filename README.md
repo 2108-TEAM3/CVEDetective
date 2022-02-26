@@ -85,7 +85,8 @@ When a single CPE or the last CPE in a list of multiple CPEs is trailed by a spa
 ![image](https://user-images.githubusercontent.com/100049886/155851250-aecdfb18-8368-4c89-b4bb-d2c6c9559d65.png)
 
 #### &ensp;Invalid Characters
-Invalid characters will cause the program to display an invalid input message and ask the user to enter CPE(s) again.  
+Invalid characters will cause the program to display an invalid input message and ask the user to enter CPE(s) again. 
+#### &ensp;Example:
 ```
 $#^&
 ```
@@ -99,6 +100,7 @@ File paths must be entered as full files paths while file names can be used when
 #### &ensp;File paths and names that do not exist
 When an invalid file name or path is entered, you will have the option to try again.
 
+#### &ensp;Examples:
 ![image](https://user-images.githubusercontent.com/100049886/155851703-f7b25c61-cc0f-4d83-bb51-1b96dd879c47.png)
 
 ![image](https://user-images.githubusercontent.com/100049886/155851715-f4c76dbc-799c-44af-991b-214c242ab8fc.png)
