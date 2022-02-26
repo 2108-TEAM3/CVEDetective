@@ -106,7 +106,7 @@ When an invalid file name or path is entered, you will have the option to try ag
 ![image](https://user-images.githubusercontent.com/100049886/155851715-f4c76dbc-799c-44af-991b-214c242ab8fc.png)
 
 #### &ensp;Files with invalid input
-CPEs listed in files must include valid CPE characters. When an invalid CPE is found a "Forbidden characters" message will appear and the invalid CPE will be returned with a message to check your data.
+CPEs listed in files must include valid CPE characters. When an invalid CPE is found a "Forbidden characters" message will appear and the invalid CPE will be returned with a message to check your data. The program will then close.
 
 ![image](https://user-images.githubusercontent.com/100049886/155852218-7db683e8-7701-46f9-9634-27973b9e1b8c.png)
 
