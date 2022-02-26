@@ -52,9 +52,13 @@ For each CPE, you can expect the output of CVE-Detective to include:
 > Note
 > 1. If a single CPE has multiple CVEs, they will be displayed in order by CVSS Score and their criticality rating based on that score.
 >     1. The criticality rating is based on the most current CVSS version (CVSS v3.1) with a color associated to each criticality score. Each score can be broken down as follows:
->     Base Score | Criticality Rating | Color
->     ---------- | ------------------ | ------
 >     
+>      Base Score | Criticality Rating | Color
+>      ---------- | ------------------ | ------
+>      9.0 - 10.0 |      Critical      | Red
+>       7.0 - 8.9 |        High        | Orange
+>       4.0 - 6.9 |       Medium       | Cyan
+>       0.1 - 3.9 |        Low         | White
 >   
 > 2. The order of CPEs will follow the same order that is input into the terminal or the text file to be uploaded.
 
