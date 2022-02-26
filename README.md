@@ -78,9 +78,10 @@ cpe:/a:apache:activemq_artemis:2.6.3
 cpe:/a:apache:activemq_artemis:2.6.3, cpe:2.3:a:apache:activemq:5.14.0:*:*:*:*:*:*:*, cpe:2.3:a:apache:accumulo:1.4.1:*:*:*:*:*:*:*
 ```
 
-###Potential Errors
+### Potential Errors
 #### &ensp;Trailing spaces or commas
 When a single CPE or the last CPE in a list of multiple CPEs is trailed by a space or comma, an error message will be displayed.
+
 ![image](https://user-images.githubusercontent.com/100049886/155850972-59aef23b-a614-4914-a859-9da98fa0d755.png)
 
 #### &ensp;Invalid Characters
