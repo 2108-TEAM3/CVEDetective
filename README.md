@@ -94,7 +94,7 @@ $#^&
 ### Option 2: Uploading a Text File Containing CPEs into the Script
 #
 ### Input Format for File Names and File Paths
-File paths must be entered as full files paths while file names can be used when the referenced file is in the same directory where the program is stored.
+File paths must be entered as full files paths while file names can be used when the referenced file is in the same directory where the program is stored. CPE(s) included in files may be a single CPE or multiple. Multiple CPE(s) must be listed line by line.
 
 ### Potential Errors
 #### &ensp;File paths and names that do not exist
@@ -105,6 +105,10 @@ When an invalid file name or path is entered, you will have the option to try ag
 
 ![image](https://user-images.githubusercontent.com/100049886/155851715-f4c76dbc-799c-44af-991b-214c242ab8fc.png)
 
+#### &ensp;Files with invalid input
+CPEs listed in files must include valid CPE characters. When an invalid CPE is found a "Forbidden characters" message will appear and the invalid CPE will be returned with a message to check your data.
+
+![image](https://user-images.githubusercontent.com/100049886/155852218-7db683e8-7701-46f9-9634-27973b9e1b8c.png)
 
 ### Option 3: Utilizing the Integrated NMap Scan 
 #
