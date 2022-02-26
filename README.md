@@ -80,9 +80,9 @@ cpe:/a:apache:activemq_artemis:2.6.3, cpe:2.3:a:apache:activemq:5.14.0:*:*:*:*:*
 
 ### Potential Errors
 #### &ensp;Trailing spaces or commas
-When a single CPE or the last CPE in a list of multiple CPEs is trailed by a space or comma, an error message will be displayed.
+When a single CPE or the last CPE in a list of multiple CPEs is trailed by a space or comma, an error message will be displayed and you will be asked to enter CPE(s) again.
 
-![image](https://user-images.githubusercontent.com/100049886/155850972-59aef23b-a614-4914-a859-9da98fa0d755.png)
+![image](https://user-images.githubusercontent.com/100049886/155851250-aecdfb18-8368-4c89-b4bb-d2c6c9559d65.png)
 
 #### &ensp;Invalid Characters
 ```
@@ -98,6 +98,7 @@ This option will perform a nmap (-SV) scan on a target machine and return known 
 > Note
 > 1. Input of a valid IP address will be checked and, if invalid, user will be prompted to re-enter (CTRL+C to quit).
 > 2. Loading times may vary depending on the CPEs found, longer if more general CPEs are encountered.
+
 
 
 
