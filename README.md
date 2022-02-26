@@ -61,6 +61,7 @@ For each CPE, you can expect the output of CVE-Detective to include:
 >       0.1 - 3.9 |        Low         | White
 >   
 > 2. The order of CPEs will follow the same order that is input into the terminal or the text file to be uploaded.
+> 3. A CSV file containing similar information to the output in the terminal will be saved in the same folder where the CVE-Detective script is ran from.
 
 
 ### Option 1: Inputting a Single CPE or Multiple CPEs on the Shell
