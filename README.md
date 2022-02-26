@@ -91,6 +91,13 @@ Invalid characters will cause the program to display an invalid input message an
 $#^&
 ```
 
+### Special Note
+It is possible for the program to accept inputs that have valid characters but are not existing CPEs. In this case, a "No CVEs found" message will appear.
+
+![image](https://user-images.githubusercontent.com/100049886/155852460-4fe3509d-3993-4610-9b16-c7a340022069.png)
+
+
+
 ### Option 2: Uploading a Text File Containing CPEs into the Script
 #
 ### Input Format for File Names and File Paths
@@ -116,9 +123,4 @@ This option will perform a nmap (-SV) scan on a target machine and return known 
 > Note
 > 1. Input of a valid IP address will be checked and, if invalid, user will be prompted to re-enter (CTRL+C to quit).
 > 2. Loading times may vary depending on the CPEs found, longer if more general CPEs are encountered.
-
-
-
-
-
 
